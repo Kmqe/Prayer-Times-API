@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background: linear-gradient(45deg, #240165, #05001c);
+            font-family: "Tajawal", serif;
+        }
+
+        #city_name {
+            font-weight: 400;
+            font-size: 200px;
+            color: white;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+        }
+
+        .card {
+            width: 12%;
+            height: 95%;
+            background-color: white;
+            font-size: 20px;
+            box-shadow: 0 10px 5px rgb(0 0 0 / 30%);
+        }
+
+        .header {
+            background: linear-gradient(45deg, #5709ee, #7a37bf);
+            color: white;
+        }
+
+        .header h1 {
+            font-weight: 400;
+            padding: 5px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .time {
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body style="direction: rtl;">
+    <div style="height: 100vh;">
+
+        <div style="margin-top: 100px;">
+            
+            <!--========== CITY NAME ==========-->
+            <div style="color: white; margin-right: 40px;">
+                <h1 id="city_name">الرياض</h1>
+                <h6 style="font-size: 40px; font-weight: 200;" id="date">الجمعة 24 نوفمبر</h6>
+            </div>
+            
+            <hr style="margin: 0 50px; border-color: #5200e1;">
+            
+            <!--========== PRAYER TIMINGES ==========-->
+            <div class="center" style="height: 300px; margin-top: 80px; justify-content: space-evenly;">
+                <div class="card">
+                    <div class="header">
+                        <h1>الفجر</h1>
+                    </div>
+
+                    <div class="body center" style="height: 80%;">
+                        <h1 class="time" id="fajr_time">
+                            4:30
+                        </h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h1>الشروق</h1>
+                    </div>
+
+                    <div class="body center" style="height: 80%;">
+                        <h1 class="time" id="sunrise_time">
+                            4:30
+                        </h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h1>الظهر</h1>
+                    </div>
+
+                    <div class="body center" style="height: 80%;">
+                        <h1 class="time" id="dhurh_time">
+                            4:30
+                        </h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h1>العصر</h1>
+                    </div>
+
+                    <div class="body center" style="height: 80%;">
+                        <h1 class="time" id="asr_time">
+                            4:30
+                        </h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h1>المغرب</h1>
+                    </div>
+
+                    <div class="body center" style="height: 80%;">
+                        <h1 class="time" id="sunset_time">
+                            4:30
+                        </h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h1>العشاء</h1>
+                    </div>
+
+                    <div class="body center" style="height: 80%;">
+                        <h1 class="time" id="isha_time">
+                            4:30
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <!--========== CHANGE CITY SELECT ==========-->
+            <div class="center" style="margin-top: 120px;">
+                <select name="" id="cities-select" style="width: 300px; height: 35px; font-size: 25px; font-family: Tajawal, serif; background: none; color: white; padding: 10px; border-radius: 20px; height: fit-content;">
+                    <!-- <option value="">الرياض</option>
+                    <option value="">الشرقية</option>
+                    <option value="">جدة</option> -->
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
